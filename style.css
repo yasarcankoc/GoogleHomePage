@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+/* nav-barı flex yöntemi ile sağ tarafa aldık */
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* bütün a etiketlerinin alt çizgisini kaldırdık  */
+a {
+  text-decoration: none;
+}
+
+/* nav-bar ve footer'da ki sırasız listelerin yanyana hizalanmasını sağladık */
+ul {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul > li {
+  font-size: 13px;
+  margin: 0.5rem;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+li {
+  font-size: 14px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.menu {
+  margin: 0.9rem 1rem;
+  cursor: pointer;
+}
+
+.menu > i {
+  margin: 2px;
+}
+
+/* giriş yap buton özellikleri */
+.btn-login {
+  color: #fff;
+  background: #1a73e8;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin-right: 8px;
+  min-width: 96px;
+  padding: 9px 23px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  line-height: 16px;
+  border-radius: 4px;
+}
+
+/* BODY */
+
+/* logo ve search alanını sayfanın ortasına getirmek için yukardan margin verdik */
+section {
+  margin-top: 8.6rem;
+}
+
+/* bodydeki elemanları ortaladık */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 1.4rem;
+}
+
+/* arama alanındaki elemanları ortalayıp özellikler ekledik */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  height: 44px;
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+  background: #fff;
+  width: 584px;
+  margin: auto;
+}
+
+.search-container:hover {
+  border: 1px solid rgb(206, 206, 206);
+}
+
+/* arama logosunu search alanının sol tarafına hizaladık */
+.search-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* mic logosunu sağa hizaladık */
+.mic-container > span {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+/* text yerinin özellikleri */
+.search {
+  width: 480px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.btn-container {
+  margin-top: 1rem;
+}
+
+/* arama yerinin altındaki butonların özellikleri */
+button {
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #202124;
+  font-size: 14px;
+  height: 36px;
+  margin: 14px 4px;
+  background-color: #f8f9fa;
+  padding: 0 16px;
+  line-height: 27px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid rgb(206, 206, 206);
+}
+
+/* BODY */
+
+/* FOOTER */
+
+footer {
+  background-color: #f2f2f2;
+  color: #70757a;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}
+
+/* footer containerin içindeki elemanları biri en sol biri en sağ hizaladık */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.3rem;
+}
+
+.footer-ul > li {
+  padding: 0 7px;
+  margin: 0.9rem 0.5rem;
+}
+
+/* FOOTER */
